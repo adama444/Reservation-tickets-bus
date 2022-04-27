@@ -9,9 +9,7 @@
             <h2 class="text-center text-uppercase fw-bold">Contactez Nous !</h2>
 
             <div class="row">
-
                 <div class="col-lg-6">
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="info-box">
@@ -35,11 +33,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form">
+                    <form method="POST" action="/contact" role="form">
+                        @csrf
                         <div class="row my-2">
                             <div class="col form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -62,9 +60,7 @@
                         </div>
                     </form>
                 </div>
-
             </div>
-
         </div>
     </section>
 @endsection

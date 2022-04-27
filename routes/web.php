@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,21 +24,20 @@ Route::get('/company', [CompanyController::class, 'index']);
 
 Route::get('/company/{id}', [CompanyController::class, 'show']);
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'sendMessage']);
 
 Route::get("/buy-tickets", function() {
     return view("pages.buy-tickets");
 });
 
-Route::get('/admin', function () {
-    return view('admin.home');
-});
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/company/add', [AdminController::class, 'addCompany']);
+Route::get('/admin/company/del', [AdminController::class, 'delCompany']);
+Route::get('/admin/company/update', [AdminController::class, 'updateCompany']);
+Route::get('/admin/company/list', [AdminController::class, 'listCompany']);
 
-Route::get('/admin/company', function () {
-    return view('admin.company');
-});
+Route::post('/admin/company/add', [AdminController::class, 'add']);
 
 Route::get('/admin/client', function () {
     return view('admin.client');

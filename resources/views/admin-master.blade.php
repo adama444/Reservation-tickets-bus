@@ -22,7 +22,7 @@
         <!-- START HEADER-->
         <header class="header">
             <div class="page-brand">
-                <a class="link" href="index.html">
+                <a class="link" href="/admin">
                     <span class="brand">Admin
                         <span class="brand-tip">CAST</span>
                     </span>
@@ -49,7 +49,7 @@
                 <ul class="nav navbar-toolbar">
                     <li class="dropdown dropdown-user">
                         <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
-                            <img src="./assets/img/admin-avatar.png" />
+                            <img src="{{ asset('assets/img/admin-avatar.png') }}" />
                             <span></span>Admin<i class="fa fa-angle-down m-l-5"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Profile</a>
@@ -83,24 +83,67 @@
                     </li>
 
                     <li>
-                        <a href="/admin/company">
-                            <span class="nav-label">Compagnies</span>
-                        </a>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Compagnies</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="/admin/company/add">Ajouter</a>
+                            </li>
+                            <li>
+                                <a href="/admin/company/list">Afficher la liste</a>
+                            </li>
+                            <li>
+                                <a href="/admin/company/del">Supprimer</a>
+                            </li>
+                            <li>
+                                <a href="/admin/company/update">Modifier</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="/admin/ticket">
-                            <span class="nav-label">Tickets</span>
-                        </a>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Tickets</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="typography.html">Afficher la liste</a>
+                            </li>
+                            <li>
+                                <a href="panels.html">Supprimer</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="/admin/travel">
-                            <span class="nav-label">Voyages</span>
-                        </a>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Voyages</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="typography.html">Afficher la liste</a>
+                            </li>
+                            <li>
+                                <a href="typography.html">Ajouter</a>
+                            </li>
+                            <li>
+                                <a href="panels.html">Supprimer</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="/admin/client">
-                            <span class="nav-label">Clients</span>
-                        </a>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Clients</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="typography.html">Afficher la liste</a>
+                            </li>
+                            <li>
+                                <a href="typography.html">Ajouter</a>
+                            </li>
+                            <li>
+                                <a href="panels.html">Supprimer</a>
+                            </li>
+                            <li>
+                                <a href="panels.html">Modifier</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

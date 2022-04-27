@@ -76,16 +76,16 @@
                                 Compagnies
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">ETRAB</a>
+                                <a href="#" class="text-reset">ETRAB</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">S.T.S</a>
+                                <a href="#" class="text-reset">S.T.S</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Cheval Blanc</a>
+                                <a href="#" class="text-reset">Cheval Blanc</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">STISALI</a>
+                                <a href="#" class="text-reset">STISALI</a>
                             </p>
                         </div>
                         <!-- Grid column -->
