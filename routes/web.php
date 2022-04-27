@@ -24,3 +24,7 @@ Route::get('/company', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+
+Route::get("/buy-tickets", function() {
+    return view("pages.buy-tickets");
+});

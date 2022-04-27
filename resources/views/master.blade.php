@@ -18,9 +18,10 @@
 
             <!-- Nav -->
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Accueil</a></li>
+                <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Accueil</a></li>
                 <li class="nav-item"><a href="/company" class="nav-link">Compagnies</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">Contactez nous</a></li>
+                <li class="nav-item"><a href="/buy-tickets" class="nav-link active text-uppercase" aria-current="page">Reserver votre ticket</a></li>
             </ul>
             <!-- Nav -->
         </header>
