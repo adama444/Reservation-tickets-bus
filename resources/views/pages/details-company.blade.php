@@ -8,33 +8,31 @@
         <div class="col-md-3">
             <div class="info-box mt-4">
                 <h3>Nom de la compagnie</h3>
-                <p>ETRAB</p>
+                <p>{{ $company->name }}</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="info-box mt-4">
                 <h3>Mail de la compagnie</h3>
-                <p>etrab@gmail.com</p>
+                <p>{{ $company->email }}</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="info-box mt-4">
                 <h3>Contact</h3>
-                <p>+ 228 90 02 80 58</p>
+                <p>{{ $company->phone }}</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="info-box mt-4">
                 <h3>Adresse</h3>
-                <p>Agouè, Lomé</p>
+                <p>{{ $company->address }}</p>
             </div>
         </div>
         <div class="row">
             <div class="info-box mt-4">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam maxime sit ex et incidunt
-                    possimus necessitatibus laudantium! Facere laboriosam commodi, enim qui dolor iusto architecto dolorem
-                    quas odio earum?</p>
+                <p>{{ $company->description }}</p>
             </div>
         </div>
     </div>
