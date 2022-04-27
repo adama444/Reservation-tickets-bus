@@ -21,6 +21,10 @@ Route::get('/company', function () {
     return view('pages.company');
 });
 
+Route::get('/company/{id}', function () {
+    return view('pages.details-company');
+});
+
 Route::get('/contact', function () {
     return view('pages.contact');
 });
