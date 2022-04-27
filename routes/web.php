@@ -36,3 +36,19 @@ Route::get("/buy-tickets", function() {
 Route::get('/admin', function () {
     return view('admin.home');
 });
+
+Route::get('/admin/company', function () {
+    return view('admin.company');
+});
+
+Route::get('/admin/client', function () {
+    return view('admin.client');
+});
+
+Route::get('/admin/ticket', function () {
+    return view('admin.ticket');
+});
+
+Route::get('/admin/travel', function () {
+    return view('admin.travel');
+});
