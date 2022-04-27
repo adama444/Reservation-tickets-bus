@@ -32,3 +32,7 @@ Route::get('/contact', function () {
 Route::get("/buy-tickets", function() {
     return view("pages.buy-tickets");
 });
+
+Route::get('/admin', function () {
+    return view('admin.home');
+});
